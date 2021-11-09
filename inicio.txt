@@ -10,9 +10,7 @@ Sumário
 1. Códigos e conceitos base
 2. Definindo e enviando para Nuvem
 3. Novos códigos e conceitos
-4. Juntando códigos (pedidos/requests)
-5. Ignorando arquivos / Excluindo do push
-6. Resumo dos códigos usuais
+4. Resumo dos códigos usuais
 
 ########################################
 
@@ -50,7 +48,7 @@ Assim podemos rodar novamente o comando git commit
 Caso queira definir esse repositório para um outro email e usuário específico pode ser
 utilizado os seguintes comandos
 
-git config user.email "seu_email"		Lembrando que nesse caso em específico os dados git config user.name "seu_nome_no_GitHub"	estão focados nesse repositório em específico
+git config user.email "seu_email"		Lembrando que nesse caso em específico os dados git config user.name "seu_nome_no_GitHub" estão focados nesse repositório em específico
 
 ##############
 
@@ -69,5 +67,55 @@ a página e verifique a Branch master
 
 3. Novos códigos e conceitos
 
-Bom agora que já estamos configurados tanto Git como GitHub podemos criar várias versões do
-código, nesta idéia introduzimos as idéias de "branches" que são ramificações do seu código 
+Embora seja possível sempre atualizar seu código pode ocorrer de algumas mudança acabar prejudicando ou causando mais problemas do que soluções, podemos fazer o procedimento de mudar
+entre as versões (as registradas pelo commit) pelo seguinte comando
+
+git reflog		Este comando verá todas as atualizações feitas no seu código
+
+Para mudar para uma versão mais antiga ou mais nova basta utilizar o comando
+
+git reset --hard ID	O ID seria da versão que você escolher mostrada no reflog, ele é referido pela primeira sequência de números e letras no início do campo do comando reflog
+
+##OBSERVAÇÃO##
+
+Em casos de trabalhos, projetos e afins, sempre consulte seu time, grupo ou empresa se esse procedimento é aceitável no devido momento
+
+##############
+
+Bom agora que já estamos configurados tanto Git como GitHub podemos criar várias versões do código, nesta idéia introduzimos as idéias de "branches" que são ramificações do seu código 
+assim para criar ramificações diferentes e nunca interferir diretamente no código base as utilizamos, seus comandos e manipulações são as seguintes
+
+git branch		mostra quais branches estão disponíveis no momento
+
+git branch <nome_da_nova_branch>	assim criamos uma nova branch que se baseia diretamente do branch master, que é sua branch inicial
+
+Se modificarmos o arquivo dentro do nosso repositório e executarmos o comando git status iremos ter uma observação que obtemos uma nova modificação, só que como estamos na nova branch 
+teremos modificado apenas nela e não diretamente no nosso código principal assim repetimos o mesmo processo dos comandos git add -> git commit -> git push, e se verificarmos no GitHub
+na branch criada teremos todas suas modificações registradas, caso queira agora inserir as modificações da nova branch na principal utilizaremos outro comando 
+
+git checkout master		esse comando git checkout <nome_da_branch> irá para outra branch
+
+git merge <nome_da_nova_branch>		esse comando une as branches, lembrando que um requisito é estar na sua branch que deseja união
+
+##OBSERVAÇÃO##
+
+Caso em trabalhos em grupos sempre é útil exercutarmos o comando git pull na branch principal, para termos certeza que nossos dados estão atualizados, pois apenas assim garantiremos
+que nenhuma modificação que iremos fazer estará desatualizadam em relação ao código principal, assim é comum sempre começarmos com o git pull, e daí modificarmos o código
+
+##############
+
+Unindo a branch temporária a branch principal teremos que realizar os mesmos passos anteriores com git add -> git commit -> git push
+
+########################################
+
+4. Resumo dos códigos usuais
+git status	utilizado para observar os status do nosso git na branch que estamos
+git branch	mostra uma lista com as branchs que temos no repositório e a que estamos
+git pull	atualiza o nosso repositório local para a versão mais atual
+git add		adiciona os arquivos ao repositório (modificados ou não)
+git commit	envia os arquivos modificados com uma breve descrição da modificação
+git push	envia as mudanças do repositório do git para o github
+git merge	une as mudanças de uma branch em outra (normalmente uma secundária para master)
+git checkout <nome da branch>		muda de uma branch atual para uma outra
+git branch <nome da nova branch>	cria uma nova branch tendo como base a branch principal 
+git branch -d <nome da branch>		exclui a branch criada

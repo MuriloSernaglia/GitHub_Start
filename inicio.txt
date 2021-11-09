@@ -110,12 +110,12 @@ Unindo a branch temporária a branch principal teremos que realizar os mesmos pa
 
 4. Resumo dos códigos usuais
 git status	utilizado para observar os status do nosso git na branch que estamos
-git branch	mostra uma lista com as branchs que temos no repositório e a que estamos
-git pull	atualiza o nosso repositório local para a versão mais atual
 git add		adiciona os arquivos ao repositório (modificados ou não)
 git commit	envia os arquivos modificados com uma breve descrição da modificação
 git push	envia as mudanças do repositório do git para o github
+git branch	mostra uma lista com as branchs que temos no repositório e a que estamos
 git merge	une as mudanças de uma branch em outra (normalmente uma secundária para master)
+git pull	atualiza o nosso repositório local para a versão mais atual
 git checkout <nome da branch>		muda de uma branch atual para uma outra
 git branch <nome da nova branch>	cria uma nova branch tendo como base a branch principal 
 git branch -d <nome da branch>		exclui a branch criada

@@ -1,4 +1,5 @@
-Olá esse é um passo a passo de como utilizar o Git, caso tenha dúvidas de onde baixar o Git READ.ME localizado no início desse repositório, lembrando que os comandos disponibilizados estão ordenados para caso queira utiliza-los em forma de exercício
+Olá esse é um passo a passo de como utilizar o Git, caso tenha dúvidas de onde baixar o Git READ.ME localizado no início desse repositório, lembrando que os comandos 
+disponibilizados estão ordenados para caso queira utiliza-los em forma de exercício
 
 O arquivo será organizado em um sumário
 
@@ -17,12 +18,9 @@ Sumário
 
 1. Códigos e conceitos básicos
 
-Após abrir o Git com o Git Bash Here já referenciado no arquivo READ.ME temos 
-alguns preparativos a serem realizados, o primeiro é o seguinte código 
+Após abrir o Git com o Git Bash Here já referenciado no arquivo READ.ME temos alguns preparativos a serem realizados, o primeiro é o seguinte código 
 
-git init        este código irá criar um repositório dentro da pasta que executou o Git	 
-		Bash Here lembrando que este repositório no caso é criado como 
-		arquivo oculto
+git init        este código irá criar um repositório dentro da pasta que executou o Git	Bash Here lembrando que este repositório no caso é criado como arquivo oculto
 
 Logo depois desse comando é possível colocar ou criar o arquivo que deseja dentro da pasta e
 verificar quais arquivos foram adicionados e quais ainda não foram ao Git

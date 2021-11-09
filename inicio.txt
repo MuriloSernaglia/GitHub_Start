@@ -22,31 +22,23 @@ Após abrir o Git com o Git Bash Here já referenciado no arquivo READ.ME temos 
 
 git init        este código irá criar um repositório dentro da pasta que executou o Git	Bash Here lembrando que este repositório no caso é criado como arquivo oculto
 
-Logo depois desse comando é possível colocar ou criar o arquivo que deseja dentro da pasta e
-verificar quais arquivos foram adicionados e quais ainda não foram ao Git
+Logo depois desse comando é possível colocar ou criar o arquivo que deseja dentro da pasta e verificar quais arquivos foram adicionados e quais ainda não foram ao Git
 
-git status      este comando verifica qual a situação atual do git, arquivos que ainda
-		não foram adicionados, ou que foram modificados
+git status      este comando verifica qual a situação atual do git, arquivos que ainda não foram adicionados, ou que foram modificados
 
-git add 	existem duas formas de executar esse comando a mais simples é utilizando 
-		o Git add "nome_do_arquivo" caso não saiba o nome do arquivo basta abrir-lo
-		com propriedades, lembrando que não precisa ser o caminho inteiro, pois o Git
-		já esta considerando aquela pasta em que foi criado, este comando é utilizado
-		para adicionar especificamente um arquivo ao Git e a segunda é utilizando 
-		git add . que seria para adicionar todos os arquivos que estiverem na pasta
+git add 	existem duas formas de executar esse comando a mais simples é utilizando o Git add "nome_do_arquivo" caso não saiba o nome do arquivo basta abrir-lo
+		com propriedades, lembrando que não precisa ser o caminho inteiro, pois o Git já esta considerando aquela pasta em que foi criado, este comando é utilizado
+		para adicionar especificamente um arquivo ao Git e a segunda é utilizando git add . que seria para adicionar todos os arquivos que estiverem na pasta
 		
-git commit -m "texto" 	o comando commit é utilizado para realizar a mudança feita no arquivo
-			anotando uma breve informação do que foi modificado no mesmo
+git commit -m "texto" 	o comando commit é utilizado para realizar a mudança feita no arquivo anotando uma breve informação do que foi modificado no mesmo
 
-Caso for a primeira vez rodando esse comando aparecerá uma mensagem dizendo para configurar 
-seu usuário, aqui utilizaremos o mesmo login e senha do seu GitHub
+Caso for a primeira vez rodando esse comando aparecerá uma mensagem dizendo para configurar seu usuário, aqui utilizaremos o mesmo login e senha do seu GitHub
 
 ########################################
 
 2. Definindo e enviando para Nuvem
 
-Agora já definiremos o caminho que seu git deverá ser direcionado, caso for a primeira vez que
-executou o comando commit teremos que definir seu usuário do GitHub utilizando dos comandos
+Agora já definiremos o caminho que seu git deverá ser direcionado, caso for a primeira vez que executou o comando commit teremos que definir seu usuário do GitHub utilizando dos comandos
 
 git config --global user.email "seu_email"  		configura seu email
 git config --global user.name "seu_nome_no_GitHub"	configura seu nome
@@ -58,13 +50,11 @@ Assim podemos rodar novamente o comando git commit
 Caso queira definir esse repositório para um outro email e usuário específico pode ser
 utilizado os seguintes comandos
 
-git config user.email "seu_email"		Lembrando que nesse caso em específico os dados
-git config user.name "seu_nome_no_GitHub"	estão focados nesse repositório em específico
+git config user.email "seu_email"		Lembrando que nesse caso em específico os dados git config user.name "seu_nome_no_GitHub"	estão focados nesse repositório em específico
 
 ##############
 
-Após configurar seu email e nome de usuário será requisitado que defina uma url do repositório
-do GitHub no caso seu repositório criado assim utilizamos o comando
+Após configurar seu email e nome de usuário será requisitado que defina uma url do repositório do GitHub no caso seu repositório criado assim utilizamos o comando
 
 git remote add origin <link_da_url>		Define um caminho do Git para o GitHub
 
@@ -72,8 +62,7 @@ Agora é nescessário definir um caminho para o repositório do GitHub assim uti
 
 git push --set-upstream origin master
 
-Será notificado no seu Git a necessidade de login no GitHub para obter autorização para o envio
-após a autorização do mesmo a primeira versão do código esta disponível no GitHub, atualize
+Será notificado no seu Git a necessidade de login no GitHub para obter autorização para o envio após a autorização do mesmo a primeira versão do código esta disponível no GitHub, atualize
 a página e verifique a Branch master
 
 ########################################

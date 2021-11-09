@@ -1,6 +1,4 @@
-Olá esse é um passo a passo de como utilizar o Git, caso tenha dúvidas de onde baixar o Git
-READ.ME localizado no início desse repositório, lembrando que os comandos disponibilizados 
-estão ordenados para caso queira utiliza-los em forma de exercício
+Olá esse é um passo a passo de como utilizar o Git, caso tenha dúvidas de onde baixar o Git READ.ME localizado no início desse repositório, lembrando que os comandos disponibilizados estão ordenados para caso queira utiliza-los em forma de exercício
 
 O arquivo será organizado em um sumário
 
